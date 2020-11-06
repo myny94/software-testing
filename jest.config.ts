@@ -23,12 +23,13 @@ export default {
   // collectCoverageFrom: undefined,
 
   // The directory where Jest should output its coverage files
-  coverageDirectory: "coverage",
+  // coverageDirectory: "./__tests__/coverage",
 
   // An array of regexp pattern strings used to skip coverage collection
-  // coveragePathIgnorePatterns: [
-  //   "/node_modules/"
-  // ],
+   coveragePathIgnorePatterns: [
+     "/node_modules/",
+     "/jest"
+   ],
 
   // Indicates which provider should be used to instrument code for coverage
   // coverageProvider: "babel",
