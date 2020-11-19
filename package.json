@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest",
+    "test:unit": "jest -c jest.unit.config.ts",    
+    "test:integration": "jest -c jest.integration.config.ts",    
+    "test": "npm run test:unit && npm run test:integration",
     "coveralls": "jest --coverage && coveralls < coverage/lcov.info"
   },
   "author": "",
