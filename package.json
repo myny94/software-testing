@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest --verbose",
+    "test": "jest",
     "coveralls": "jest --coverage && coveralls < coverage/lcov.info"
   },
   "author": "",
