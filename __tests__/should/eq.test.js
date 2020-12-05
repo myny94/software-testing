@@ -5,8 +5,8 @@ describe("Eq operation test", () => {
   test("equal function on two different objects", () => {
     const object = { 'a': 1 }
     const other = { 'a': 2 , 'b': 4 }
-    expect(eq(object. object)).toBe(true);
-    expect(eq(object. other)).toBe(false);
+    expect(eq(object, object)).toBe(true);
+    expect(eq(object, other)).toBe(false);
     expect(eq(object, Object('a'))).toBe(false);
   });
 
@@ -21,7 +21,7 @@ describe("Eq operation test", () => {
     expect(eq('a','a')).toBe(true);
     expect(eq('a','b')).toBe(false);
   });
-
+  
   test("equal function on value and object", () => {
     expect(eq('a', Object('a'))).toBe(false);
     expect(eq('a','b')).toBe(false);
