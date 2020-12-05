@@ -26,13 +26,14 @@ const hasOwnProperty = Object.prototype.hasOwnProperty
  * countBy(users, value => value.active);
  * // => { 'true': 2, 'false': 1 }
  */
+
 function countBy(collection, iteratee) {
   return reduce(collection, (result, value, key) => {
     key = iteratee(value)
     if (hasOwnProperty.call(result, key)) {
       ++result[key]
     } else {
-      baseAssignValue(result, key, 0)
+      baseAssignValue(result, key, 1)
     }
     return result
   }, {})
