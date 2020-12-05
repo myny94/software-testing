@@ -1,4 +1,4 @@
-import add from '../src/add.js';
+import add from '../../src/add.js'
 
 describe('Test add function', () => {
 

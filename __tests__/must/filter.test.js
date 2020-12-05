@@ -1,4 +1,4 @@
-import filter from '../src/filter.js';
+import filter from '../../src/filter.js';
 
 describe('Test filter function', () => {
     const users = [
