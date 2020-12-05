@@ -16,4 +16,9 @@ describe("Test capitalize function", () => {
   test(`"example" and "eXample" are identical`, () => {
     expect(capitalize("example")).toEqual(capitalize("eXample"));
   });
+
+  // capitalize operation on number
+  test(' Capitalize function on numbers', () => {
+    expect(capitalize("33")).toBe("33");
+  })
 });

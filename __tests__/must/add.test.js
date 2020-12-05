@@ -31,4 +31,21 @@ describe('Test add function', () => {
     test('str1 + str2 = str1str2', () => {
         expect(add('str1','str2')).toBe('str1str2')
     })
+
+    test('str1 + str2 = str1str2', () => {
+        expect(add('str1','str2')).toBe('str1str2')
+    })
+
+    // add operation on NaN or null
+    test('add operation with NaN or number on NaN will produce NaN', () => {
+        expect(add(NaN, NaN)).toBe(NaN)
+        expect(add(NaN, 1)).toBe(NaN)
+    })
+
+    test('add operation with NaN/null and str will be acknowledged as string add operation', () => {
+        expect(add(NaN, 'str')).toBe('NaNstr')
+        expect(add(NaN, '')).toBe('NaN')
+        expect(add(null, 'str')).toBe('nullstr')
+        expect(add(null, '')).toBe('null')
+    })
 })
