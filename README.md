@@ -14,5 +14,5 @@ Removing this license file directly violates terms and conditions of the softwar
 Individuals who remove or modify the license file will also carry the consequences.
 
 
-# coverage
+# coverage badge
 [![Coverage Status](https://coveralls.io/repos/github/myny94/software-testing/badge.svg?branch=main)](https://coveralls.io/github/myny94/software-testing?branch=main)
