@@ -4,6 +4,7 @@ import add from "../../../src/add";
 import capitalize from "../../../src/capitalize";
 import ceil from "../../../src/ceil";
 import filter from "../../../src/filter";
+import map from "../../../src/map";
 import reduce from "../../../src/reduce";
 
 const dummyProducts = [
@@ -77,7 +78,7 @@ const searchByPrice = (lower, upper) => {
 
 const capitalizeAllFields = (products) => {
   const capitalizedArr = [];
-  products.forEach((item) => {
+  map(products, item => {
     const capitalizedObj = { ...item };
     for (const key in item) {
       if (item.hasOwnProperty(key)) {
@@ -86,7 +87,7 @@ const capitalizeAllFields = (products) => {
       }
     }
     capitalizedArr.push(capitalizedObj);
-  });
+  })
   return capitalizedArr;
 };
 
