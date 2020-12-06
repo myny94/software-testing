@@ -26,11 +26,7 @@ export default {
   // coverageDirectory: "./__tests__/coverage",
 
   // An array of regexp pattern strings used to skip coverage collection
-   coveragePathIgnorePatterns: [
-     "/node_modules/",
-     "/jest",
-     "/src/.internal/"
-   ],
+  coveragePathIgnorePatterns: ["/node_modules/", "/jest", "/src/.internal/"],
 
   // Indicates which provider should be used to instrument code for coverage
   // coverageProvider: "babel",
@@ -155,14 +151,14 @@ export default {
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
   // testPathIgnorePatterns: [
-    // "/node_modules/"
+  // "/node_modules/"
   // ],
 
   // The regexp pattern or array of patterns that Jest uses to detect test files
   // testRegex: [],
 
   // This option allows the use of a custom results processor
-  // testResultsProcessor: undefined,
+  testResultsProcessor: "./node_modules/jest-html-reporter",
 
   // This option allows use of a custom test runner
   // testRunner: "jasmine2",
