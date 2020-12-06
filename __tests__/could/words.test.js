@@ -27,7 +27,7 @@ describe("unit testing of words function", () => {
       "pebbles",
     ]);
   });
-  
+
   test("should ignore special characters by default", () => {
     expect(words("fred, barney, & pebbles")).not.toContain("&");
   });
