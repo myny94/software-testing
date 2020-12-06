@@ -20,7 +20,7 @@ const addProduct = ({ name, category, price, producer }) => {
   return Promise.resolve(newProduct);
 };
 
-describe("Integration testing for food producers", () => {
+describe("Integration testing of must features for food producers", () => {
   describe("A food producer should provide the name and the price of a product to be added", () => {
     const productToBeAdded = {};
     test("should throw error and fail to add the product with an empty name field", () => {

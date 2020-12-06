@@ -102,7 +102,7 @@ const addProductToCart = (product) => {
   cart.totalPrice = ceil(cart.totalPrice, 2);
 };
 
-describe("Integration testing for users", () => {
+describe("Integration testing of must features for users", () => {
   describe("Users can search products by name, category, price and producer, and the store frontend application displays products by making them look similar", () => {
     test("should return products whose name contains 'cucumber'", () => {
       expect(searchByName("cucumber"))
