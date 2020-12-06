@@ -43,5 +43,11 @@ The reports can be found in the root directory.
   - unit-test-report.html
   - integration-test-report.html
 
+## Test coveralls
+
+```bash
+npm run coveralls
+```
+
 # coverage badge
 [![Coverage Status](https://coveralls.io/repos/github/myny94/software-testing/badge.svg?branch=main)](https://coveralls.io/github/myny94/software-testing?branch=main)
