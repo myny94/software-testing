@@ -98,7 +98,7 @@ export default {
 
   // Use this configuration option to add custom reporters to Jest
   // reporters: undefined,
-  reporters: ["default", "jest-html-reporter"],
+  // reporters: ["default", "jest-html-reporter"],
 
   // Automatically reset mock state between every test
   // resetMocks: false,
@@ -159,7 +159,7 @@ export default {
   // testRegex: [],
 
   // This option allows the use of a custom results processor
-  testResultsProcessor: "./node_modules/jest-html-reporter",
+  // testResultsProcessor: "./node_modules/jest-html-reporter",
 
   // This option allows use of a custom test runner
   // testRunner: "jasmine2",
