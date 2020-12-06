@@ -8,6 +8,9 @@
     "test:unit": "jest -c jest.unit.config.ts",
     "test:integration": "jest -c jest.integration.config.ts",
     "test": "npm run test:unit && npm run test:integration",
+    "report:unit": "jest -c jest.unit.config.ts --reporters default jest-html-reporter && mv test-report.html unit-test-report.html",
+    "report:integration": "jest -c jest.integration.config.ts --reporters default jest-html-reporter && mv test-report.html integration-test-report.html",
+    "report": "npm run report:unit && npm run report:integration",
     "coveralls": "jest --coverage && coveralls < coverage/lcov.info"
   },
   "author": "",
