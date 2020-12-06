@@ -4,7 +4,7 @@ import at from "../../../src/at";
 import capitalize from "../../../src/capitalize";
 import countBy from "../../../src/countBy";
 import map from "../../../src/map";
-import { dummyProducts } from "../../testdata";
+import { dummyProducts } from "../../../testdata";
 
 describe("Integration testing of should features for users", () => {
   describe("A user can select one or more products from the list", () => {

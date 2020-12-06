@@ -7,7 +7,7 @@ import defaultTo from "../../../src/defaultTo";
 import eq from "../../../src/eq";
 import filter from "../../../src/filter";
 import map from "../../../src/map";
-import { dummyProducts } from "../../testdata";
+import { dummyProducts } from "../../../testdata";
 
 const searchByProducer = (keyword) => {
   keyword = defaultTo(keyword, "Unknown");

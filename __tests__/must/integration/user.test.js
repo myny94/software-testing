@@ -6,7 +6,7 @@ import ceil from "../../../src/ceil";
 import filter from "../../../src/filter";
 import map from "../../../src/map";
 import reduce from "../../../src/reduce";
-import { dummyProducts } from "../../testdata";
+import { dummyProducts } from "../../../testdata";
 
 const searchByName = (keyword) => {
   const searched = filter(dummyProducts, (product) =>
