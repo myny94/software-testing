@@ -13,6 +13,41 @@ Source code folder contains a separate license file that must **NOT** be removed
 Removing this license file directly violates terms and conditions of the software under testing.
 Individuals who remove or modify the license file will also carry the consequences.
 
+## Run test suites
+
+```bash
+# run only unit test cases
+npm run test:unit
+
+# run only integration test cases
+npm run test:integration
+
+# run both test cases
+npm test
+```
+
+## Generate test reports
+
+```bash
+# generate only unit test report
+npm run report:unit
+
+# generate only integration test report
+npm run report:integration
+
+# generate both test reports
+npm run report
+```
+
+The reports can be found in the root directory.
+  - unit-test-report.html
+  - integration-test-report.html
+
+## Test coveralls
+
+```bash
+npm run coveralls
+```
 
 # coverage badge
 [![Coverage Status](https://coveralls.io/repos/github/myny94/software-testing/badge.svg?branch=main)](https://coveralls.io/github/myny94/software-testing?branch=main)

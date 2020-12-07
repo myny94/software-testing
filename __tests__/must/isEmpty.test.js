@@ -1,3 +1,4 @@
+import isPrototype from "../../src/.internal/isPrototype.js";
 import isEmpty from "../../src/isEmpty.js";
 
 describe("Test isEmpty function", () => {
@@ -41,6 +42,45 @@ describe("Test isEmpty function", () => {
     test("Empty array returns true", () => {
       expect(isEmpty([])).toBe(true);
       expect(isEmpty([1, 2, 3])).toBe(false);
+    });
+  });
+
+  describe("Parameter with map and set objects", () => {
+    test("Empty map object returns true", () => {
+      const map = new Map();
+      expect(isEmpty(map)).toBe(true);
+    });
+
+    test("should return false when a map has more than one property", () => {
+      const map = new Map();
+      map.set("a", 1);
+      expect(isEmpty(map)).toBe(false);
+    });
+
+    test("Empty set object returns true", () => {
+      const set = new Set();
+      expect(isEmpty(set)).toBe(true);
+    });
+
+    test("should return false when a set has more than one property", () => {
+      const set = new Set();
+      set.add(1);
+      expect(isEmpty(set)).toBe(false);
+    });
+  });
+
+  describe("Parameter with object prototypes", () => {
+    function Student() {
+      this.name = "John";
+      this.gender = "M";
+    }
+    test("should return true with empty object prototype", () => {
+      expect(isEmpty(Student.prototype)).toBe(true);
+    });
+
+    test("should return false with non-empty prototype", () => {
+      Student.prototype.age = 15
+      expect(isEmpty(Student.prototype)).toBe(false);
     });
   });
 });

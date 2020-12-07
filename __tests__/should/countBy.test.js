@@ -11,12 +11,12 @@ describe("countBy operation test", () => {
     expect(countBy(users, value => value.user)).toStrictEqual({ 'barney': 1, 'betty': 1, 'fred': 1});
   });
 
-  test("equal function on empty array", () => {
+  test("countBy function on empty array", () => {
     const empty = []
     expect(countBy(empty, value => value)).toStrictEqual({});
   });
 
-  test("equal function on customized object", () => {
+  test("countBy function on customized object", () => {
     const users = [
       { 'user': 'john', 'profession': 'nurse', 'age': 45 },
       { 'user': 'joe', 'profession': 'doctor', age: 39 },
