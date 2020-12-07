@@ -41,7 +41,7 @@ const searchByPrice = (lower, upper) => {
 
 const capitalizeAllFields = (products) => {
   const capitalizedArr = [];
-  map(products, item => {
+  map(products, (item) => {
     const capitalizedObj = { ...item };
     for (const key in item) {
       if (item.hasOwnProperty(key)) {
@@ -50,7 +50,7 @@ const capitalizeAllFields = (products) => {
       }
     }
     capitalizedArr.push(capitalizedObj);
-  })
+  });
   return capitalizedArr;
 };
 
@@ -105,17 +105,9 @@ describe("Integration testing of must features for users", () => {
             expect.objectContaining({
               name: "Tuc",
             }),
-          ])
-        )
-        .toEqual(
-          expect.arrayContaining([
             expect.objectContaining({
               name: "Fries",
             }),
-          ])
-        )
-        .toEqual(
-          expect.arrayContaining([
             expect.objectContaining({
               name: "Brezel",
             }),
