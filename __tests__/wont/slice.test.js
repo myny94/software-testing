@@ -11,7 +11,7 @@ describe("Test slice function", () => {
     expect(slice([1,2,3,4], -1, 2)).toEqual([]);
   });
 
-  test("temp pass", () => {
+  test("should slice the first two elements", () => {
     const array = [1, 2, 3, 4];
     expect(slice(array, 2)).toEqual([3, 4]);
   });
